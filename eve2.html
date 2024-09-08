@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+  <title>eveent planner 2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="eve2.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+</head>
+
+<body>
+
+  <section id="Home">
+
+    <header class="header">
+
+      <div class="l"><a href="#" class="logo">
+          <k>Elegance+Affairs</k>
+        </a></div>
+
+
+
+      <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#Services">Services</a>
+        <a href="#Contact">Contact</a>
+
+      </nav>
+
+      <div id="menu-bars" class="fas fa-bars"></div>
+
+    </header>
+
+
+    <!-- html 4 slider -->
+    <div id="slider">
+      <div class="slides">
+        <div class="overlay"></div>
+        <img
+          src="https://media.istockphoto.com/id/1190043570/photo/happy-wedding-photography-of-bride-and-groom-at-wedding-ceremony-wedding-tradition-sprinkled.jpg?s=612x612&w=0&k=20&c=_aCIW5-iOIiaDdqin_50kvBcbFbIxSULHHamPUILE0c="
+          width="100%" height="100%" />
+      </div>
+
+      <div class="slides">
+        <div class="overlay"></div>
+        <img
+          src="https://media1.popsugar-assets.com/files/thumbor/wlcame7WpzBfWirTCQ_gVXiOFWw=/fit-in/1880x982/filters:format_auto():quality(85):upscale()/2018/07/25/882/n/44729715/14f45ad65b58d94751ec22.14610456_.jpg"
+          width="100%" height="100%" />
+      </div>
+
+      <div class="slides">
+        <div class="overlay"></div>
+        <img
+          src="https://media.npr.org/assets/img/2022/11/04/gettyimages-1183414292-1-_slide-edff8c3fe6afcab5c6457e3c7bd011f5c1745161.jpg"
+          width="100%" height="100%" />
+      </div>
+
+      <div class="slides">
+        <div class="overlay"></div>
+        <img
+          src="https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_1316/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1519627962%2Fvltlogy23k1iid9pjffx.jpg"
+          width="100%" height="100%" />
+      </div>
+
+      <div class="slides">
+        <div class="overlay"></div>
+        <img src="https://www.fabhotels.com/blog/wp-content/uploads/2018/10/Janmashtami.jpg" height="100%">
+      </div>
+
+
+      <!-- script for slider -->
+      <script>
+        var index = 0;
+        var slides = document.querySelectorAll(".slides");
+
+        function changeSlide() {
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+
+          index++;
+
+          if (index > slides.length - 1) {
+            index = 0;
+          }
+
+          slides[index].style.display = "block";
+
+          setTimeout(changeSlide, 2000);
+        }
+
+        changeSlide();
+      </script>
+  </section>
+
+  <section id="About">
+
+    <h3>Welcome to <k>Elegance+Affairs</k> services | Your Gateway to
+      Extraordinary Event Experiences </h3>
+
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <button class="ab mb-3">About Us</button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="about-container">
+            <p class="p1">At Elegance+Affairs , We bring out the best in event organisation by blending in
+              disciplinary organisation and ingenious creativity. We take note of your Taste, Style, Budget
+              and Preferences crafting the best possible design structure to elevate your Event
+              with utmost pomp-and-show.</p>
+            <p class="p2">In collaboration with JimmyJewels and co. and Prita Eccentrics since 2014.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about ends -->
+  </section>
+<!-- gallery starts -->
+  <section class="gallery" id="Gallery">
+
+    <h1 class="heading text-center mb-5">Gallery</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box">
+            <img src=" https://cms-tc.pbskids.org/parents/_pbsKidsForParentsThreeTwoRatioMedium/EWW-tablescape-hero.jpg"
+              alt="p1" class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOXrUPXBOGoROhy2BHJvajb5ftm_7cihEAfagoy8K1hbCb0aWx1gR-x_NsPgVM0khHdhA&usqp=CAU"
+              alt="p1" class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box">
+            <img
+              src="https://www.thespruce.com/thmb/SjvweHHAnRoTu40dPYyvVI_farg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-748338637-5abe72153418c60037f2070b.jpg"
+              alt="p1" class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+        </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box">
+            <img src="https://www.cedarcollege.sa.edu.au/wp-content/uploads/2016/03/sportsday.jpg" alt="p1"
+              class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ccQ7TesoOLVa1WoiHS0co9Q3Yql1HLnHCf8wSIvVm-6VLNrZ3-29IjIRrvj7MAbOIOs&usqp=CAU"
+              alt="p1" class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+        </div>
+       <div class="col-lg-4 col-md-6 mb-4">
+          <div class="box">
+            <img
+              src="https://imengine.prod.srp.navigacloud.com/?uuid=003c0fa7-5a15-5388-89bc-f95a347f0dc0&type=primary&q=72&width=1024"
+              alt="p6" class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <div class="box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs5jwsOPLlhiydrSwUObMnNbVU3lQDiqTkFw&usqp=CAU"
+              alt="p7" class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <div class="box">
+            <img
+              src="https://lh3.googleusercontent.com/C23lM_tLfFjJ7AtLGXeFSxmts1n26vssJh50hXJSuqPRE_CwAUTg8bM9Xw1vffuds1TwBivgDczdjexyUQnOvcQNKTq2=w1000"
+              alt="p1" class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+        </div>
+       <div class="col-lg-4 col-md-6 mb-4">
+
+          <div class="box">
+            <img src="https://static.toiimg.com/thumb/msid-102631099,width-400,resizemode-4/102631099.jpg" alt="p1"
+              class="img-fluid">
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- gallery ends -->
+ <!-- Services starts -->
+  <section class="services" id="Services">
+
+    <h1 class="heading text-center mb-5">Our Services</h1>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 mb-4">
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-envelope"></i>
+              <h3>Event Planning</h3>
+              <p>We specialize in meticulously planning and executing a wide range of events, from intimate gatherings
+                to large-scale corporate meet-ups.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Venue Booking</h3>
+              <p>Explore personalized venue options tailored to your budget, ensuring the perfect setting for your
+                special occasion.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-music"></i>
+              <h3>Entertainment</h3>
+              <p>Immerse your guests in a world of entertainment with top-notch DJs, live artists, dance performances,
+                and even rave parties.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-utensils"></i>
+              <h3>Catering Services</h3>
+              <p>Indulge in a culinary experience with customizable menus featuring diverse cuisines and flavors to
+                suit every palate.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-photo-video"></i>
+              <h3>Photo & Videography</h3>
+              <p>Capture and relive your most cherished moments with our professional photography and videography
+                services.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="box">
+            <div class="icons">
+              <i class="fab fa-elementor"></i>
+              <h3>Themes & Customization</h3>
+              <p>Elevate your event with themed decor, makeup services, curated fashion collections, unique gifts, and
+                stylish invitations tailored to your preferences.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Services ends -->
+<!-- Contact starts -->
+  <section class="contact" id="Contact">
+
+    <h1 class="heading text-center mb-5">Are You ready to make your Reservation</h1>
+
+    <div class="container mt-5">
+      
+        <form class="col-md-8 mx-auto">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" placeholder="Enter your location" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="eventType">Type of Event</label>
+            <select class="form-control" id="eventType" required>
+              <option value="" disabled selected>Select an event type</option>
+              <option value="birthday">Birthday</option>
+              <option value="wedann">Wedding/Anniversary</option>
+              <option value="Educational">Educational program</option>
+              <option value="Sports">Sports Event</option>
+              <option value="concert">Rave/Concert</option>
+              <option value="Corporate">Corporate</option>
+              <option value="Householdparty">Household Party</option>
+              <option value="officialParty">Official Party</option>
+
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="eventDescription">Describe Event</label>
+            <textarea class="form-control" id="eventDescription" rows="3" placeholder="Describe your event"></textarea>
+          </div>
+
+
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+              <label for="photo and videography">Photo and Videography</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="photo and videography" id="Yes">
+                <label for="form-check-label" for="photo and videography">Yes</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="photo and videography" id="No">
+                <label for="form-check-label" for="photo and videography">No</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="photo and videography" id="Later">
+                <label for="form-check-label" for="photo and videography">Later</label>
+              </div>
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+              <label for="Entertainment">Entertainment Services</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Entertainment" id="Yes">
+                <label for="form-check-label" for="Entertainment">Yes</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Entertainment" id="No">
+                <label for="form-check-label" for="Entertainment">No</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Entertainment" id="Later">
+                <label for="form-check-label" for="Entertainment">Later</label>
+              </div>
+
+            </div>
+            <div class="col-md-6 mb-3">
+
+              <label for="Catering">Catering Services</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Catering" id="Yes">
+                <label for="form-check-label" for="Catering">Yes</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Catering" id="No">
+                <label for="form-check-label" for="Catering">No</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Catering" id="Later">
+                <label for="form-check-label" for="Catering">Later</label>
+              </div>
+
+            </div>
+
+
+            <div class="col-md-6 mb-3">
+
+              <label for="ThemesCustom">Themes and Customization</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ThemesCustom" id="Yes">
+                <label for="form-check-label" for="ThemesCustom">Yes</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ThemesCustom" id="No">
+                <label for="form-check-label" for="ThemesCustom">No</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ThemesCustom" id="Later">
+                <label for="form-check-label" for="ThemesCustom">Later</label>
+              </div>
+
+            </div>
+
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Contact ends -->
+    <div class="end">
+      <div class="container">
+        <div class="row">
+          <img src="" alt="">
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>Contact Us at </h3>
+            <h5>DPI Colony , Unit-8 , Bhubaneswar</h5>
+            <h5>Phone : +91 5602-6700</h5>
+            <h5>email : eleganceaffairs101@gmail.com </h5>
+          </div>
+          <div class="col em">
+            <h3>Follow us on </h3>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+    </div>
+    </div>
+    <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
